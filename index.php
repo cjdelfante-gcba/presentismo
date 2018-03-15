@@ -3,7 +3,6 @@
   <title>Prueba de PHP</title>
  </head>
  <body>
- <?php echo '<p>Hola Mundo: GCBA</p>'; ?>
  <?php
     $connstr = getenv("MYSQLCONNSTR_MySqlDB");    
     
@@ -25,8 +24,6 @@
     echo "<br>Connected to DB server successfully</br>";
     //select a database to work with
     $selectDb = mysql_select_db("default", $dbhandle) or die("Could not select database");
-    //execute the SQL query and return records
-    $sqlQuery = mysql_query("SELECT * FROM person") or die("Could not query database");
 	
     mysql_close($dbhandle);
 ?>
