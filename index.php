@@ -26,7 +26,7 @@
     //select a database to work with
     $selectDb = mysql_select_db("default", $dbhandle) or die("Could not select database");
     //execute the SQL query and return records
-    $sqlQuery = mysql_query("SELECT * FROM `default`.person;") or die("Could not query database");
+    $sqlQuery = mysql_query("SELECT * FROM `default`.person") or die("Could not query database");
 	
     mysql_close($dbhandle);
 ?>
