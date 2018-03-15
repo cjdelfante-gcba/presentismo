@@ -4,9 +4,6 @@
  </head>
  <body>
  <?php echo '<p>Hola Mundo: GCBA</p>'; ?>
- <span>db-></span><?php echo getenv("db"); ?><span><-db</span>
- <span>testenv-></span><?php echo getenv("testenv"); ?><span><-testenv</span>
-
  <?php
     $connstr = getenv("MYSQLCONNSTR_MySqlDB");    
     
@@ -20,6 +17,7 @@
         $hostname = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
         $username = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
         $password = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
+        $database = preg_replace("/^.*Database=(.+?)$/", "\\1", $value);
         break;
     }
     echo "Server Name: ".$hostname."</br>";
@@ -27,7 +25,7 @@
     $dbhandle = mysql_connect($hostname, $username, $password) or die("Unable to connect to MySQL");
     echo "<br>Connected to DB server successfully</br>";
     //select a database to work with
-    $selectDb = mysql_select_db("db_name",$dbhandle) or die("Could not select database");
+    $selectDb = mysql_select_db($database, $dbhandle) or die("Could not select database");
     //execute the SQL query and return records
     //$sqlQuery = mysql_query("SELECT * FROM Table") or die("Could not query database");
 	
