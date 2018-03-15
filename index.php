@@ -4,6 +4,6 @@
  </head>
  <body>
  <?php echo '<p>Hola Mundo: GCBA</p>'; ?>
- <?php echo getenv("db"); ?>
+ <span>db-></span><?php echo getenv("db"); ?><span><-enddb</span>
  </body>
 </html>
