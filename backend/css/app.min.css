@@ -1,0 +1,14 @@
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);vertical-align:top;font-family:'lato-regular'}body{background-color:#f9f9f9;overflow:hidden}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background-color:#ebebeb;border-radius:4px}::-webkit-scrollbar-thumb{border-radius:10px;background-color:#d5d2d2}
+::-moz-scrollbar{width:6px}::-moz-scrollbar-track{background-color:#ebebeb;border-radius:4px}::-moz-scrollbar-thumb{border-radius:10px;background-color:#d5d2d2}
+::-o-scrollbar{width:6px}::-o-scrollbar-track{background-color:#ebebeb;border-radius:4px}::-o-scrollbar-thumb{border-radius:10px;background-color:#d5d2d2}
+::-ms-scrollbar{width:6px}::-ms-scrollbar-track{background-color:#ebebeb;border-radius:4px}::-ms-scrollbar-thumb{border-radius:10px;background-color:#d5d2d2}
+.btn_gral{width:auto!important;display:inline-block;margin:0!important;padding:8px 25px!important;background-color:#ffc800;border:solid 2px #edbb06!important;color:#fff;text-decoration:none;font-family:'lato-light';font-size:14px;-webkit-transition:.3s;-o-transition:.3s;-ms-transition:.3s;-moz-transition:.3s;transition:.3s}
+.btn_gral:hover{color:#ffc800;background-color:#fff}.linea_roja{width:80px;height:2px;background-color:#ffc800;display:block;margin:5px 0}.linea_naranja{width:80px;height:2px;background-color:#e9ad72;display:block;margin:5px 0}
+.linea_azul{width:80px;height:2px;background-color:#5386a3;display:block;margin:5px 0}#cnt_general{width:100%;height:100%;background-color:#f2f2f2;display:none}
+#muestra_contenido{width:calc(100% - 205px);height:calc(100% - 75px);display:inline-block;box-sizing:border-box;padding:15px;background-color:#f2f2f2}
+#header_general{width:100%;height:50px;display:inline-block;background-color:#ffc800}#logo{width:49%;display:inline-block;vertical-align:middle}#datos_usuario{width:49%;height:100%;display:inline-block;vertical-align:middle;text-align:right;min-width:320px}
+#nombre_usuario{height:100%;display:inline-block;line-height:75px;color:#fff}#icono_usuario_menu{display:inline-block;width:20px;height:100%;text-align:center;box-sizing:border-box;padding:23px 0 0 0;cursor:pointer}
+#menu_usuario{opacity:0;display:none;width:155px;height:113px;position:absolute;right:17px;top:0;background-color:#ffc800;text-align:center}#cerrar_sesion{width:100%;display:inline-block;box-sizing:border-box;padding:8px 0;margin-top:50px;color:#fff;cursor:pointer}
+#cierra_menu_usuario{display:inline-block;position:absolute;bottom:0;cursor:pointer}.header_secciones{width:100%;display:inline-block;box-sizing:border-box;padding:20px 0}
+.cnt_titulo_secciones{display:inline-block;vertical-align:middle;font-size:25px;min-width:320px}.header_tablas{width:100%;background-color:#e9ad72}.secciones{display:none;opacity:0}

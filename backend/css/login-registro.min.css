@@ -1,0 +1,10 @@
+#cnt_login_registro{width:100%;height:100%;display:inline-block}#login{width:100%;height:100%;display:inline-block;text-align:center}.cnt_titulo_login{width:100%;display:inline-block;box-sizing:border-box;padding:20px 0 0 0}
+.cnt_logo_titulo{display:inline-block;vertical-align:middle;margin-right:16px;margin-bottom:25px;width:100%}.cnt_logo_titulo img{display:inline-block;vertical-align:middle;margin-right:16px;width:120px}
+.titulo_evento{display:inline-block;font-size:20px;color:#5d5e5e;vertical-align:middle;text-align:left}.letra_roja{display:inline-block;color:#edbb06}
+#bajada_login{width:100%;display:inline-block}#cnt_form_login{width:100%;max-width:800px;min-width:250px;display:inline-block;text-align:center;margin-top:60px}
+#formulario_login{width:69%;min-width:300px;display:inline-block;box-sizing:border-box;padding:35px 0}#formulario_login input{width:100%;display:inline-block;box-sizing:border-box;border:solid 1px #ebebeb;margin-bottom:15px;max-width:450px;padding:6px 8px}
+#cnt_btn_login{width:100%;display:inline-block;margin:20px 0}#nuevo_usuario{width:30%;min-width:240px;display:inline-block;box-sizing:border-box;padding:0 0 0 45px}
+#titulo_nuevo_usuario{width:100%;display:inline-block;font-size:16px;margin:12px 0;text-align:left;max-width:500px}#texto_nuevo_usuario{width:100%;display:inline-block;margin:10px 0;text-align:left;max-width:500px}
+#cnt_btn_registro_login{width:100%;display:inline-block;margin-top:30px}#registro{width:100%;height:100%;display:none;text-align:center}#cnt_registro{width:100%;display:inline-block;max-width:700px;min-width:250px;margin-top:50px}
+#formulario_registro{width:100%;display:inline-block}#formulario_registro input,#formulario_registro select{width:45%;display:inline-block;box-sizing:border-box;border:solid 1px #ebebeb;margin:0 10px 15px 10px;max-width:450px;min-width:200px;padding:6px 8px}
+#cnt_btn_registro{width:45%;display:inline-block;text-align:left;margin:0 10px 15px 10px;min-width:200px}#volver_login{width:calc(100% - 153px);display:inline-block;font-size:13px;text-align:center;margin-top:10px;min-width:200px}

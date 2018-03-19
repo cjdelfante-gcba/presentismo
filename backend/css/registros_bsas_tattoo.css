@@ -1,0 +1,55 @@
+#mis_eventos  				 {width: 100%; height: 100%; background-color: #f2f2f2; display: none;}
+#cnt_eventos_pasados_futuros {width: 49%; display: inline-block; text-align: right; vertical-align: middle; min-width: 300px;}
+.cnt_numero_texto 			 {width: auto; display: inline-block; vertical-align: middle; background-color: #ffffff; box-sizing: border-box; padding: 5px; margin: 2px;}
+#numero_eventos_pasados 	 {display: inline-block; box-sizing: border-box; padding: 0px 5px; color: #ebbc79; font-weight: bold; border-right: 1px solid #cccccc; vertical-align: middle;}
+#numero_eventos_futuro 		 {display: inline-block; box-sizing: border-box; padding: 0px 5px; color: #ebbc79; font-weight: bold; border-right: 1px solid #cccccc; vertical-align: middle;}
+.eventos_header_texto 		 {display: inline-block; box-sizing: border-box; padding: 0px 5px; font-size: 14px; vertical-align: middle;}
+.cnt_lista_eventos 			 {width: 100%; display: inline-block;     height: 84%;  }
+#proximo_evento 			 {width: 100%; display: inline-block; }
+#titulo_proximo_evento 		 {width: 100%; display: inline-block; border-bottom: 1px solid #d6d6d6; box-sizing: border-box; padding: 5px 0px;}
+#texto_contador 			 {width: 112px; display: inline-block; vertical-align: middle;}
+#cnt_contador_proximo_evento {width: calc(100% - 117px); display: inline-block; vertical-align: middle; text-align: right;}
+#circulo_proximo_evento 	 {width: 10px; height: 10px; border-radius: 50%; display: inline-block; background-color:#d6d6d6; vertical-align: middle; margin: 0px 5px;}
+#texto_proximo_evento 	   	 {width: auto; display: inline-block; vertical-align: middle;}
+#cnt_dias_evento 			 {width: auto; display: inline-block; color:#e9ad72; vertical-align: middle;}
+
+#datos_proximo_evento 		 {width: 100%; display: inline-block; box-sizing: border-box; padding: 5px 0px; background-color: #ffffff; text-align: center; margin-top: 10px;}
+#numero_proximo_evento 	     {width: 9%; display: inline-block; vertical-align: middle; border-right: solid 1px #cecece;}
+#nombre_proximo_evento  	 {width: 29%; display: inline-block; vertical-align: middle; border-right: solid 1px #cecece; box-sizing: border-box; padding-left: 15px; text-align: left;}
+#empresa_proximo_evento  	 {width: 30%; display: inline-block; vertical-align: middle; box-sizing: border-box; padding-left: 15px; text-align: left;}
+#fecha_proximo_evento 	 	 {width: 19%; display: inline-block; vertical-align: middle; border-right: solid 1px #cecece;}
+#icono_proximo_evento 	     {width: 10%; display: inline-block; vertical-align: middle;}
+
+.historial_eventos 			 {width: 100%; display: inline-block; border-bottom: 1px solid #d6d6d6; box-sizing: border-box; padding: 5px 0px; margin-top: 20px;}
+.titulo_historial_eventos  	 {width: 100%; display: inline-block;}
+.texto_historial_eventos 	 {width: 49%; display: inline-block; vertical-align: middle;}
+.cnt_buscador_historial_eventos {width: 49%; display: inline-block; vertical-align: middle;}
+.buscador_historial_eventos {width: 100%; display: inline-block; text-align: right;}
+.busca_eventos 				{width: 200px; background: url('../template/iconos/lupa.png') no-repeat left center; box-sizing: border-box; padding: 0px 0px 0px 18px !important; margin-bottom: 0px;}
+
+.cnt_tabla_eventos 			{width: 100%; display: inline-block;}
+#cnt_interno_tabla_evento 	{width: 100%; height: 100%; display: inline-block; overflow-y: auto;}
+#tabla_eventos 				{width: 100%; background-color: #ffffff; }
+#tabla_eventos thead 		{width: 100%; background-color: #e9ad72;}
+.headers_tabla_eventos 		{color: #ffffff;     padding: 10px; box-sizing: border-box; text-align: left; font-size: 12px; }
+.fila_gris 					{background-color: #f7f7f7;}
+.table_cell_evento 			{    padding: 30px; box-sizing: border-box; text-align: left; vertical-align: middle;}
+.table_cell_evento_center 	{text-align: center; cursor: pointer;}
+.borde_cell_evento 			{border-right: 1px solid #e9e9e9;}
+.accion 					{text-align: center; padding: 8px 0px 8px 0px;}
+.accion span 				{display: inline-block; vertical-align: middle; cursor: pointer;}
+.accion span img 			{display: inline-block; vertical-align: middle;}
+
+.decargar_registros 	 {display: inline-block; width: calc(100% - 320px); cursor: pointer; text-align: right;}
+.decargar_registros span {display: inline-block; border-radius: 3px; box-sizing: border-box; background-color: #66bb6a; color: #fff; padding: 5px 40px;}
+
+
+
+#empleados 					{ width: 100%; height: 100%; }
+#tabla_asistenciass 		{ width: 100%; }
+
+.table_cell_asistencia 		{     padding: 15px;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 13px; }

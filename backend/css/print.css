@@ -1,0 +1,12 @@
+/*
+@media screen { 
+  body 							{ visibility: hidden; background-color: red;  }
+  #interna_popup 				{ height: 100%; margin: 0; max-height: 100%; position: absolute; left: 0; top: 0; }
+  #cont_ficha_permisionario 	{ visibility: visible; position: absolute; left: 0; top: 0; }
+}*/
+
+@media print { 
+  body 							{ visibility: hidden; background-color: red; }
+  #interna_popup 				{ margin: 50px 0; height: 100%; margin: 0; max-height: 100%; position: absolute; left: 0; top: 0; }
+  #cont_ficha_permisionario 	{ visibility: visible; position: absolute; left: 0; top: 0; }
+}

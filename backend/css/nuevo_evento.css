@@ -1,0 +1,41 @@
+#nuevo_evento  {width: 100%; height: 100%; display: inline-block;}
+#subtitulo_nuevo_evento {width: 100%; display: inline-block; font-size: 14px;}
+#datos_generales {width: 100%; display: inline-block; border-bottom: 1px solid #d6d6d6; box-sizing: border-box; padding: 5px 0px; margin-bottom: 15px;}
+#cnt_form_nuevo_evento {width: 100%; display: inline-block; }
+#form_nuevo_evento {width: 100%; display: inline-block;}
+#cnt_form_derecho  {width: 50%; display: inline-block; max-width: 600px; min-width:280px;}
+#form_nuevo_evento input {width: 90%; border: solid 1px #dfdfdf; box-sizing: border-box; padding: 6px 8px;}
+#locacion_evento_form 	{cursor: pointer;}
+
+#cnt_form_izquierdo {width: 50%; display: inline-block; max-width: 600px; min-width:280px;}
+.cnt_fechas_form {width: 90%; display: inline-block; margin-bottom: 7px; min-width: 280px;}
+.cnt_fechas_form input { width: 172px !important; display: inline-block; vertical-align: middle; background: url(../template/iconos/calendar_nuevo_evento.png) 146px 6px #ffffff no-repeat; cursor: pointer;}
+#fecha_inicio_nuevo_evento, #fecha_fin_nuevo_evento {margin:0px 20px 7px 0px;}
+.label_fechas_nuevo_evento {width: 110px; display: inline-block; vertical-align: middle;}
+.cnt_fechas_nuevo_evento {width: calc(100% - 115px); display: inline-block; min-width: 280px; text-align: right;}
+#hora_inicio_nuevo_evento, #hora_fin_nuevo_evento {width: 90px !important; margin-bottom: 7px; background: url('../template/iconos/down_hora.png') 66px 12px #ffffff no-repeat; cursor: pointer;;}
+
+#cnt_btn_form_nuevo_evento {width: 100%; display: inline-block; margin: 20px 0px; text-align: right;}
+#bnt_form_nuevo_evento 	{width: auto !important; display: inline-block; margin: 0px !important; padding: 8px 25px !important; background-color: #5386a3; border: solid 2px #5386a3 !important; color: #ffffff; text-decoration: none; font-family: 'lato-light'; font-size: 14px; -webkit-transition: .3s; -o-transition: .3s; -ms-transition: .3s; -moz-transition: .3s; transition: .3s;}
+#bnt_form_nuevo_evento:hover {background-color: #f2f2f2; color: #5386a3; }
+
+#empresa_crea_evento {width: 90%; margin: 0px 0px 7px 0px; box-sizing: border-box; border: solid 1px #dfdfdf; padding: 6px 8px;}
+#tipo_crea_evento {width: 90%; margin: 0px 0px 7px 0px; box-sizing: border-box; border: solid 1px #dfdfdf; padding: 6px 8px;}
+
+
+/*popup mapa*/
+#cnt_popup_mapa 		{width: 100%; height: 100%; position: fixed; display: none; top: 0; left: 0; background-color: rgba(0,0,0, .6); }
+#centra_mapa 			{display: table; height: 100%; width: 100%;}
+#centra_mapa_vertical	{display: table-cell; vertical-align: middle; text-align: center;}
+
+#cnt_mapa_titulo 		{display: inline-block; width: 300px; height: 485px; position: relative; background-color: #ffffff; box-sizing: border-box; padding: 5px;}
+#cnt_titulo_popup_mapa 	{display: inline-block; width: 100%; text-align: left; font-size: 18px; box-sizing: border-box; padding: 15px 10px 0px 10px;}
+#titulo_mapa 			{display: inline-block; width: 100%;}
+
+#cnt_mapa 				{display: inline-block; width: 100%; height: 335px;}
+#mapa_locacion 			{display: inline-block; width: 100%; height: 100%;}
+#cierra_popup_mapa 		{display: inline-block; width: 18px; height: 18px; position: absolute; top: -10px; right: -10px; background-color: #ffffff; z-index: 10; border-radius: 50%;}
+#floating-panel 		{z-index: 5; background-color: #fff; padding: 5px 5px 10px 5px; text-align: center; line-height: 30px; width: 100%; box-sizing: border-box; }
+#address 				{width: calc(80% - 40px) !important; display: inline-block;}
+#busca_ubicacion 		{width: 35px !important; display: inline-block; margin-left: -5px; background: url('../template/iconos/lupa_blanca.png') no-repeat #5386a3 10px; border: solid 2px #5386a3; }
+#cnt_btn_mapa 			{display: inline-block; width: 100%; margin-top: 10px;}

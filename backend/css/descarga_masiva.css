@@ -1,0 +1,13 @@
+#form-carga-masiva 			{ width: auto; display: inline-block; background-color: #f9f9f9; padding: 12px; border-radius: 4px; }
+#form-carga-masiva div 		{ display: inline-block; width: auto; vertical-align: middle; padding: 0 4px;}
+.cont-excel-form 			{display: inline-block; width: auto; }
+.cont-excel-form svg 		{ width: 30px;  }
+.cont-excel-form svg path 	{ fill:#dcdcdc; }
+#aclaracion-carga-masiva 	{ font-size: 12px; margin-top: 10px; }
+#subir_archivo 				{     display: inline-block; vertical-align: middle; cursor: pointer; }
+
+#descarga_modelo 			{ float: right; margin-top: 8px; }
+
+.devolucion_cm 				{ width: 100%; display: inline-block; border-bottom: 1px solid #dcdcdc; }
+.devolucion_cm span 		{ width: 200px; display: inline-block; padding: 10px 0; }
+#resultados_carga 			{ width: 100%; margin: 15px 0; font-weight: bold; }

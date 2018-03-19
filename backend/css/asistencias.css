@@ -1,0 +1,20 @@
+#asistencias 				{ height: 100%; }
+.cnt_lista_eventos 			{ height: 88%; }
+#cnt_interno_tabla_asistencias { height: 84%; overflow-y: auto; overflow-x: hidden; }
+.cnt_tabla_eventos 			{ height: 100%; }
+
+#tabla_usuarios 			{ width: 100%; }
+.editar_usuario 			{ text-align: center !important; }
+.editar_usuario img 		{ display: inline-block; padding: 5px; width: 16px; cursor: pointer; margin: 5px; }
+
+#contenedor_popup 			{ text-align: center; display: none; -webkit-transform:scale(0); opacity: 0; width: 100%; height:102%; position: absolute; z-index: 10; background-color: rgba(0,0,0,.5); }
+#interna_popup 				{ position: relative; margin-top: 5%; padding: 20px; width: 50%; background-color: #fff; display: inline-block; min-width: 250px; max-width: 600px; max-height: 80%;
+    overflow-y: auto;}
+.titularpop 				{ font-weight: bold;  margin-bottom: 22px;}
+#interna_popup input[type=text],
+#interna_popup input[type=password] 		{ border: 1px solid #ccc;    margin-bottom: 10px; width: 97%; }
+.btn_submit 								{ margin: 5px; background-color: #e9ad72; border: none; padding: 10px 0; width: 180px; text-align: center; color: #fff; cursor: pointer; }
+#cruz_popup 				{ position: absolute; right: 8px; top: 0; padding: 5px; cursor: pointer; }
+.textpop 					{ margin: 20px 0; }
+
+#btn_imprimir 				{ margin-bottom: 14px !important; }

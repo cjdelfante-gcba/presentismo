@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta   http-equiv="Content-Security-Policy" 
+                default-src 'self';
+                connect-src *;
+                style-src 'self' data: chrome-extension-resource: 'unsafe-inline';
+                img-src 'self' data: chrome-extension-resource:;
+                frame-src 'self' data: chrome-extension-resource:;
+                font-src 'self' data: chrome-extension-resource:;
+                media-src *;>
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="UTF-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        
+        <script type="text/javascript" async defer src="js/plugin/tw.js"></script>
+        <script type="text/javascript" async defer src="js/plugin/table.js"></script>
+        <script type="text/javascript" async defer src="js/plugin/rome.js"></script>
+        <script type="text/javascript" async defer src="js/motor.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="r/r.css" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="css/login-registro.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="css/asistencias.css" />
+        <link rel="stylesheet" type="text/css" href="css/usuarios.css" />
+         <link rel="stylesheet" type="text/css" href="css/empleados.css" />
+          <link rel="stylesheet" type="text/css" href="css/descarga_masiva.css" />
+        <link rel="stylesheet" type="text/css" href="css/registros_bsas_tattoo.css">
+        <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+        
+        <script type="text/javascript" src="r/r.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        
+        <title> Mayep - Presentismo </title>
+    </head>
+    <body onload="_funciones_de_carga()">
+        <section id="cnt_login_registro" class="secciones">
+        	<section id="login" class="secciones">
+                <div id="cnt_form_login">
+                    <div class="cnt_titulo_login">
+                        <span class="cnt_logo_titulo">
+                            <img src="template/logos/bsas.png" />
+                        </span>
+                        <div class="titulo_evento">BIENVENIDO AL SERVICIO DE <span class="letra_roja">Presentismo</span><span class="linea_roja"></span></div>
+                    </div>
+            		<form id="formulario_login" name="formulario_login">
+            			<input type="text" name="registro_documento" id="registro_documento" placeholder="DNI" />
+            			<input type="password" name="registro_pass" id="registro_pass" placeholder="********" />
+            			<div id="cnt_btn_login">
+                            <input type="submit" name="submit" value="INGRESAR" id="btn_login" class="btn_gral" />
+                        </div>  
+                    </form>
+                </div>
+        	</section>
+        </section>
+        <section id="cnt_general">
+            <div id="contenedor_popup">
+                <div id="interna_popup"></div>
+            </div>
+            <header id="header_general">
+                <div id="logo"></div>
+                <div id="datos_usuario">
+                    <span id="nombre_usuario"></span>
+                    <span id="icono_usuario_menu"><img src="template/iconos/down_user.png"></span>
+                </div>
+                <div id="menu_usuario">
+                    <span id="cerrar_sesion">Cerrar sesi&oacute;n</span>
+                    <span id="cierra_menu_usuario"><img src="template/iconos/up_user.png"></span>
+                </div>
+            </header>
+            <aside id="cnt_menu">
+                <nav id="menu">
+                    <div id="cnt_logo_menu">
+                        <img src="template/logos/bsas_blanco.png">
+                    </div>
+                    <div class="cnt_item_menu">
+                        <div class="item_menu_box">
+                            <a href="#empleados" class="item_menu">Permisionarios</a>
+                            <div id="permisionaros_submenu" class="submenues">
+                                <a href="#empleados" class="item_menu">Listado</a>
+                                <a href="#nuevo_permisionario" class="item_menu">Nuevos permisionarios</a>
+                                <a href="#carga_masiva_permisionarios" class="item_menu">Carga masiva</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cnt_item_menu">
+                        <div class="item_menu_box">
+                            <a href="#asistencias" class="item_menu">Asistencias</a>
+                        </div>
+                    </div>
+                    <div class="cnt_item_menu">
+                        <div class="item_menu_box">
+                            <a href="#usuarios" class="item_menu">Usuarios</a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- 
+                    <div id="cnt_redes_menu">
+                        <a href="https://www.facebook.com/ReiatsuDigital/" target="_blank" class="icono_menu_rrss">
+                            <img src="template/iconos/facebook.png">
+                        </a>
+                        <a href="https://www.instagram.com/reiatsudigital/" target="_blank" class="icono_menu_rrss">
+                            <img src="template/iconos/instagram.png">
+                        </a>
+                        <a href="https://twitter.com/Rdigital_" target="_blank" class="icono_menu_rrss">
+                            <img src="template/iconos/twitter.png">
+                        </a>
+                        <a href="https://www.linkedin.com/company/3571394/" target="_blank" class="icono_menu_rrss">
+                            <img src="template/iconos/linkedin.png">
+                        </a>
+                    </div> 
+                -->
+            </aside>
+            <section id="muestra_contenido">
+                <section id="empleados" class="secciones">
+                	<div class="header_secciones">
+                        <div class="cnt_titulo_secciones">
+                            <span class="titulo_secciones">Permisionarios</span>
+                            <span class="linea_naranja"></span>
+                        </div>
+                        <!-- <div class="decargar_registros" id="decargar_registros_piercing_bsas"></div> -->
+                    </div>
+                    <div id="cnt_lista_eventos" class="cnt_lista_eventos">
+                        <div id="cnt_tabla_eventos" class="cnt_tabla_eventos">
+                          <!--   <div id="historial_eventos" class="historial_eventos">
+                                <div id="titulo_historial_eventos" class="titulo_historial_eventos">
+                                    <span id="texto_historial_eventos" class="texto_historial_eventos">Historial completo de permisionarios</span>
+                                    <div id="cnt_buscador_historial_eventos" class="cnt_buscador_historial_eventos">
+                                        <form id="buscador_historial_eventos" class="buscador_historial_eventos" name="buscador_historial_eventos">
+                                            <input type="text" id="busca_eventos" class="busca_eventos" name="busca_eventos" class="fuzzy-search" placeholder="Buscar">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div id="cnt_interno_tabla_evento">
+                                <table id="tabla_eventos">
+                                    <thead>
+                                        <tr>
+                                            <th class="sort headers_tabla_eventos" data-sort="nombre">QR</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="nombre">Nombre</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="apellido">Apellido</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="edad">Dni</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="telefono">Tipo de permiso</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="direccion">N Permiso</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="email">Feria</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="tatuador">Rubro</th>
+                                            <th class="headers_tabla_eventos">Vencimiento</th>
+                                            <th class="headers_tabla_eventos"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tabla_empleados" class="list">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="nuevo_permisionario" class="secciones">
+                    <div class="header_secciones">
+                        <div class="cnt_titulo_secciones">
+                            <span class="titulo_secciones">Nuevo Permisionario</span>
+                            <span class="linea_naranja"></span>
+                        </div>
+                        <!-- <div class="decargar_registros" id="decargar_registros_piercing_bsas"></div> -->
+                    </div>
+                    <form id="form_crea_empleado">
+                        <label>Nombre</label>
+                        <input type="text" id="creaempleado_nombre" name="nombre" placeholder="Juan" />
+                        <label>Apellido</label>
+                        <input type="text" id="creaempleado_apellido" name="apellido" placeholder="Pérez" />
+                        <label>DNI</label>
+                        <input type="number" id="creaempleado_dni" name="dni" placeholder="35222458" />
+                        <label>Número de permiso</label>
+                        <input type="text" id="creaempleado_npermiso" name="n_permiso" placeholder="85122" />
+                        <label>Tipo de feria</label>
+                        <input type="text" id="creaempleado_ubicacion" name="tipo_permiso" placeholder="Titular" />
+                        <label>Feria</label>
+                        <input type="text" id="creaempleado_feria" name="feria" placeholder="FERIA ITINERANTE DE ABASTECIMIENTO BARRIAL - FIAB Nº 19" />
+                        <label>Rubro</label>
+                        <input type="text" id="creaempleado_rubro" name="rubro" placeholder="Productos de Granja. Carnes Porcina, Ovina- Carne vacuna y sus derivados." />
+                        <label>Vencimiento</label>
+                        <input type="text" id="creaempleado_horario_inicio" name="vencimiento" placeholder="1/15/2019" />
+                        <label>Número de disposición</label>
+                        <input type="text" id="creaempleado_horario_fin" name="disposicion" placeholder="DI-2018-69-DGFER" />
+                        <label>Foto de ficha</label>
+                        <input type="file" id="foto_permisionario" name="foto_permisionario" />
+                        <div class="text-align-center"><input class="btn_submit" type="submit" value="Guardar" /></div>
+                    </form>
+                </section>
+                <section id="carga_masiva_permisionarios" class="secciones">
+                    <div class="header_secciones">
+                        <div class="cnt_titulo_secciones">
+                            <span class="titulo_secciones">Carga masiva de permisionarios</span>
+                            <span class="linea_naranja"></span>
+                        </div>
+                        <a id="descarga_modelo" class="btn" href="descarga_modelo.php">Descarga modelo de archivo</a>
+                    </div>
+                    <form id="form-carga-masiva">
+                        <label id="subir_archivo" for="in-excel">
+                            <div class="cont-excel-form">
+                                <svg version="1.1" class="svg-form" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.7 18.2" enable-background="new 0 0 16.7 18.2" xml:space="preserve">
+                                    <path fill="#FFFFFF" d="M15.6,7.5l-9.9,9.9l0,0c0,0,0,0,0,0l-0.1,0.1l0,0c-0.6,0.5-1.3,0.8-2,0.8c-0.9,0-1.8-0.4-2.5-1.1
+                                        c-0.6-0.6-1-1.5-1.1-2.3C0,14,0.2,13.2,0.8,12.6l0,0l9.7-9.7C11.3,2,12.7,2.1,13.6,3c0.4,0.4,0.7,1,0.7,1.5c0,0.6-0.2,1.2-0.6,1.6
+                                        L5.8,14l-1.1-1.1L12.6,5c0.1-0.1,0.1-0.3,0.1-0.4c0-0.2-0.1-0.4-0.3-0.5c-0.3-0.3-0.7-0.3-0.9-0.1l-9.6,9.6v0
+                                        c-0.3,0.3-0.4,0.7-0.4,1.1c0,0.5,0.3,0.9,0.6,1.3c0.7,0.7,1.8,0.8,2.4,0.2l9.9-9.9c0.5-0.5,0.7-1.1,0.6-1.8c0-0.8-0.4-1.5-1-2.1
+                                        c-1.2-1.2-2.9-1.3-3.9-0.3l-8.2,8.2L1,9.3l8.2-8.2c1.6-1.6,4.3-1.4,6.1,0.3c0.8,0.8,1.3,1.9,1.4,3.1C16.7,5.7,16.3,6.7,15.6,7.5"></path>
+                                </svg>
+                            </div>
+                            <div id="subefilename">Subir archivo csv</div>
+                        </label>
+                        <input type="file" id="in-excel" name="input_imagen_1" class="display-none" />
+                        <input type="hidden" id="hidden_imagen_1" name="archivo_masivo"/>
+                        <div id="cont-guardar-masivo">
+                            <input type="submit" name="" class="btn" value="Iniciar carga" />
+                        </div>
+                        <div id="aclaracion-carga-masiva">El archivo debe tener la misma estructura descargada para el modelo de archivo, de lo contrario no se realizara la carga (Hasta 500 Registros). Ninguno de los campos debe tener el caracter ";"</div>
+                    </form>
+                    <div id="devuelve_contenido_excel"></div>
+                </section>
+                <section id="asistencias" class="secciones">
+                    <div class="header_secciones">
+                        <div class="cnt_titulo_secciones">
+                            <span class="titulo_secciones">Asistencias</span>
+                            <span class="linea_naranja"></span>
+                        </div>
+                        <!-- <div class="decargar_registros" id="decargar_registros_piercing_bsas"></div> -->
+                    </div>
+                    <div id="cnt_lista_asistencias" class="cnt_lista_eventos">
+                        <div id="cnt_tabla_asistencias" class="cnt_tabla_eventos">
+                            <!-- <div id="historial_eventos" class="historial_eventos">
+                                <div id="titulo_historial_asistencias" class="titulo_historial_eventos">
+                                    <span id="texto_historial_asistencias" class="texto_historial_eventos">Historial completo de asistencias</span>
+                                    <div id="cnt_buscador_historial_asistencias" class="cnt_buscador_historial_eventos">
+                                        <form id="buscador_historial_asistencias" class="buscador_historial_eventos" name="buscador_historial_eventos">
+                                            <input type="text" id="busca_asistencias" class="busca_eventos" name="busca_eventos" class="fuzzy-search" placeholder="Buscar">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div id="cnt_interno_tabla_asistencias">
+                                <table id="tabla_asistenciass">
+                                    <thead class="header_tablas">
+                                        <tr>
+                                            <th class="sort headers_tabla_eventos" data-sort="fecha">Fecha</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="horario">Horario</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="nombre">Nombre</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="apellido">Apellido</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="documento">Documento</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="feria">Feria</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tabla_asistencias" class="list">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="usuarios" class="secciones">
+                    <div class="header_secciones">
+                        <div class="cnt_titulo_secciones">
+                            <span class="titulo_secciones">Usuarios</span>
+                            <span class="linea_naranja"></span>
+                        </div>
+                        <!-- <div class="decargar_registros" id="decargar_registros_piercing_bsas"></div> -->
+                    </div>
+                    <div id="cnt_lista_asistencias" class="cnt_lista_eventos">
+                        <div id="cnt_tabla_usuarios" class="cnt_tabla_eventos">
+                            <div id="historial_eventos" class="historial_eventos">
+                                <div id="titulo_historial_asistencias" class="titulo_historial_eventos">
+                                    <span id="texto_historial_asistencias" class="texto_historial_eventos">
+                                        <button class="btn_gral" id="nuevo_usuario">Nuevo usuario</button>
+                                    </span>
+                                   <!--  <div id="cnt_buscador_historial_usuarios" class="cnt_buscador_historial_eventos">
+                                        <form id="buscador_historial_asistencias" class="buscador_historial_eventos" name="buscador_usuarios">
+                                            <input type="text" id="busca_usuarios" class="busca_eventos" name="busca_eventos" class="fuzzy-search" placeholder="Buscar">
+                                        </form>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div id="cnt_interno_tabla_usuarios">
+                                <table id="tabla_usuarios">
+                                    <thead class="header_tablas">
+                                        <tr>
+                                            <th class="sort headers_tabla_eventos" data-sort="user">Usuario</th>
+                                            <th class="sort headers_tabla_eventos" data-sort="pass">Contraseña</th>
+                                            <th class="sort headers_tabla_eventos">Ver</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tabla_usuarios" class="list">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>

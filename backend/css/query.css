@@ -1,0 +1,49 @@
+@media (min-width: 200px) and (max-width: 700px){
+	/*General*/
+	#header_general 		{height: auto;}
+	#cnt_menu 				{display: none;}
+	#muestra_contenido		{width: 100%; height: auto;}
+
+	/*login*/
+	#cnt_login_registro {height: auto;}
+	.cnt_logo_titulo 	{text-align: center;}
+	#cnt_form_login 	{text-align: center;}
+	#formulario_login 	{padding: 35px 0px 10px 0px; border-right: 0px;}
+	#nuevo_usuario 	{width: 100%; padding: 0px 10px 20px 10px;}
+
+	/*Registro*/
+	#volver_login 	{margin: 10px 0px;}
+
+	/*Mis eventos*/
+	#cnt_eventos_pasados_futuros  	{width: 100%; text-align: left;}
+	#cnt_contador_proximo_evento 	{width: 100%; text-align: left;}	
+
+	/*Nuevo evento*/
+	#cnt_form_izquierdo, #cnt_form_derecho {width: 100%;}
+	.label_fechas_nuevo_evento {margin-bottom: 10px;}
+	#form_nuevo_evento input 	{width: 100%;}
+	#empresa_crea_evento, #tipo_crea_evento {width: 100%;}
+	.cnt_fechas_nuevo_evento 	{text-align: left;}
+	#fecha_inicio_nuevo_evento, #fecha_fin_nuevo_evento {margin-right: 3px;}
+	.cnt_inputs_file_programa 	{width: 100%; margin: 10px 0px;}
+	#cnt_lista_form, #cnt_programa_form {width: 100%;}
+	.agregar_invitados {width: 100%;}
+}
+@media (min-width: 701px) and (max-width: 1024px){
+	/*General*/
+
+
+	/*login*/
+	.cnt_logo_titulo 	{text-align: center;}
+	#cnt_form_login 	{text-align: center;}
+	#formulario_login 	{padding: 35px 0px 10px 0px; border-right: 0px;}
+	#nuevo_usuario 	{width: 100%; padding: 0px 10px 20px 10px;}
+
+	/*Registro*/
+	#volver_login 		{margin: 10px 0px;}
+	#cnt_btn_registro 	{width: 100%; margin: 20px 0px;}
+	#volver_login 		{width: 49%;}
+
+	/*Nuevo evento*/
+	.cnt_fechas_nuevo_evento 	{text-align: left;}
+}

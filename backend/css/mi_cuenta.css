@@ -1,0 +1,18 @@
+#mi_cuenta 	{width: 100%; display: inline-block;}
+#editar_cuenta 	{width: 100%; display: inline-block; border-bottom: 1px solid #d6d6d6; box-sizing: border-box; padding: 5px 0px; margin-bottom: 15px; text-align: right;}
+
+#btn_editar_cuenta 	{width: auto; display: inline-block; vertical-align: middle; cursor: pointer;}
+#texto_editar_cuenta 	{width: auto; display: inline-block; vertical-align: middle;}
+#icono_editar_cuenta {width: auto; display: inline-block; vertical-align: middle;} 
+#cnt_datos_mi_cuenta {display: inline-block; width: 100%; max-width: 800px; margin: 0 auto;}
+#datos_mi_cuenta 	{width: 100%; display: inline-block; background-color: #ffffff; box-shadow: 0px 2px 3px 1px #cdcdcd; min-width: 200px;}
+#header_datos_usuario 	{width: 100%; display: inline-block; background-color: #b3474e; color: #ffffff; box-sizing: border-box; padding: 10px 0px 10px 25px;}
+.labels_datos_usuario 	{width: 200px; display: inline-block; vertical-align: middle;  box-sizing: border-box; padding: 10px 0px 10px 25px; background-color: #ffffff;}
+.label_fondo 		{background-color:#f7f7f7; }
+#nombre_apellido_usuario_mi_cuenta 	{width: calc(100% - 200px); display: inline-block; vertical-align: middle; box-sizing: border-box; padding: 10px 0px 10px 25px; min-width: 200px; min-height: 39px;}
+#empresa_usuario_mi_cuenta 	{width: calc(100% - 200px); display: inline-block; vertical-align: middle; background-color: #f7f7f7; box-sizing: border-box; padding: 10px 0px 10px 25px; min-width: 200px; min-height: 39px;}
+#email_usuario_mi_cuenta 	{width: calc(100% - 200px); display: inline-block; vertical-align: middle; box-sizing: border-box; padding: 10px 0px 10px 25px; min-width: 200px; min-height: 39px;}
+#telefono_usuario_mi_cuenta 	{width: calc(100% - 200px); display: inline-block; vertical-align: middle; background-color: #f7f7f7; box-sizing: border-box; padding: 10px 0px 10px 25px; min-width: 200px; min-height: 39px;}
+#password_usuario_mi_cuenta 	{width: calc(100% - 200px); display: inline-block; vertical-align: middle;; box-sizing: border-box; padding: 10px 0px 10px 25px; min-width: 200px; min-height: 39px;}
+#cnt_btn_edita_perfil 	{display: inline-block; width: 100%; margin-top: 20px; text-align: right;}
+#btn_actualiza_datos_perfil {display: none;}

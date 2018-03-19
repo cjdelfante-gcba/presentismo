@@ -1,0 +1,3 @@
+#content_ver_usuario span:first-child { font-family: lato-bold; }
+#content_ver_usuario span 		{ width: 80px; display: inline-block; vertical-align: middle; }
+.ver_usuario_list 				{ margin: 5px 0; text-align: left; }

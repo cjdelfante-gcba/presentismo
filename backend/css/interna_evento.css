@@ -1,0 +1,84 @@
+#interna_evento 			{width: 100%; height: 100%; display: none;}
+#cnt_btn_voler_eventos 		{display: inline-block; width: 49%; text-align: right;}
+#cnt_btn_voler_eventos span {display: inline-block; width: auto; height: 8px; vertical-align: middle;}
+#cnt_btn_voler_eventos a 	{display: inline-block; width: auto; vertical-align: middle; margin-left:4px;}
+#datos_generales_interna 	{display: inline-block; width: 55%; margin-right: 22px;}
+#cnt_datos_interna_evento 	{width: 100%; display: inline-block; background-color: #ffffff;}
+#header_datos_generales_interna {width: 100%; display: inline-block; margin-bottom: 8px; box-sizing: border-box; padding: 5px; border-bottom: 1px solid #cecece;}
+#titulo_header_datos_generales  {width: calc(100% - 19px); display: inline-block; vertical-align: middle;}
+.filas_interna_evento 		{width: 100%; display: inline-block; border-bottom: 1px solid #f2f2f2; box-sizing: border-box; padding: 8px 15px;}
+#resumen_evento_interna 	{width: 40%; display: inline-block;}
+#header_datos_resumen 		{width: 100%; height: 32px; display: inline-block; margin-bottom: 8px; box-sizing: border-box; padding: 5px; border-bottom: 1px solid #cecece;}
+
+.cnt_fila_resumen 			{width: 100%; display: inline-block; box-sizing: border-box; background-color: #ffffff; padding: 7px 0px; border-bottom: 1px solid #f2f2f2;}
+.valores_resumen 			{width: 40px; display: inline-block; vertical-align: middle; text-align: center; color: #e9ad72; font-weight: bold; border-right: 2px solid #e9ad72;}
+.label_resumen 				{display: inline-block; width: calc(100% - 42px); box-sizing: border-box; padding-left: 10px; vertical-align: middle;}
+
+#cnt_file_programa 			{display: inline-block; width: 100%; margin: 15px 0px 0px 0px; text-align: center;}
+.cnt_btn_carga_files 		{display: inline-block; width: 100%; text-align: right; box-sizing: border-box; padding: 10px 0px 10px 10px;}
+.cnt_inputs_file_programa 	{width: 50%; display: inline-block; min-width: 280px; box-sizing: border-box; padding: 10px;}
+#archivo_lista_invitados 	{display: none;}
+#lista_invitados_form 		{width: 60%; display: inline-block;}
+#icono_lista_invitados_form {width: 40%; display: inline-block; text-align: right;}
+.agregar_invitados 			{width: 100%; display: inline-block; background-color: #ffffff; box-sizing: border-box; padding: 6px 8px; cursor: pointer;}
+.texto_agregar_invitados 	{display: inline-block; width: calc(100% - 19px); vertical-align: middle;}
+.cnt_img_agregar_invitados 	{display: inline-block; width: 14px; height: 14px; vertical-align: middle;}
+
+#cnt_programa_form {width: 100%; display: inline-block; border-bottom: 1px solid #d6d6d6; box-sizing: border-box; padding: 5px 0px; margin-bottom: 15px;}
+#programa_form {width: 60%; display: inline-block;}
+#icono_programa_form {width: 40%; display: inline-block; text-align: right;}
+#archivo_programa {display: none;}
+
+#cnt_lista_form {width: 100%; display: inline-block; border-bottom: 1px solid #d6d6d6; box-sizing: border-box; padding: 5px 0px; margin-bottom: 15px;}
+
+#cnt_lista_de_invitados_interna_evento  	{width: 100%; display: inline-block;}
+#header_lista_de_invitados_interna_evento 	{width: 100%; display: inline-block; margin:8px 0px 8px 0px; box-sizing: border-box; padding: 5px; border-bottom: 1px solid #cecece;}
+#titulo_lista_interna_evento 	{width: 100%; display: inline-block; margin: 10px 0px;}
+
+#buscador_lista_invitados {display: inline-block; width: 50%;}
+#busca_lista_usuarios {width: 200px; background: url(../template/iconos/lupa.png) no-repeat left center; box-sizing: border-box; padding: 0px 0px 0px 18px; margin-bottom: 0px;}
+
+#agregar_invitado_interna_evento 	{width: 50%; display: inline-block; text-align: right;}
+#agrega_invitados 					{width: auto; display: inline-block; cursor: pointer;}
+#texto_btn_agregar_interna_evento 	{width: auto; display: inline-block; vertical-align: middle; margin-right: 8px;}
+#cnt_img_agregar_interna_evento 	{display: inline-block; width: 14px; height: 14px; vertical-align: middle;}
+#cnt_altura_tabla_invitados 		{display: inline-block; width: 100%; height: 220px; overflow-y: auto;} 
+#cnt_tabla_invitados {width: 100%; display: inline-block;}
+#tabla_lista_invitados {width: 100%; background-color: #ffffff; margin-top: 10px;}
+#tabla_lista_invitados thead {width: 100%; background-color: #e9ad72;}
+.table_cell_lista_invitados 	{padding: 8px 0px 8px 10px; box-sizing: border-box; text-align: left; vertical-align: middle;}
+.edita_perfil_invitado 			{display: inline-block; width: 45%; text-align: center;}
+.elimina_invitado 				{display: inline-block; width: 45%; text-align: center;}
+
+#cnt_popup_edita_invitados 	{position: absolute; top:0; left: 0; width: 100%; height: 100%; display: none; background-color: rgba(0,0,0, .5);}
+#alinea_popup_lista_invitados 	{display: table; width: 100%; height: 100%;}
+#alinea_popup_vertical_lista_invitados {display: table-cell; vertical-align: middle; text-align: center;}
+#popup_lista_invitados {display: inline-block; width: 300px; background-color: #f2f2f2; box-sizing: border-box; padding: 10px 35px; position: relative;}
+#cierra_popup_lista_usuarios {display: inline-block; position: absolute; top: 2px; right: 2px; }
+#cnt_titulo_popup_invitados {display: inline-block; width: 100%;}
+#titulo_popup_invitados {display: inline-block; width: 100%; font-size: 18px; color: #e9ad72; margin: 15px 0px 0px 0px; text-align: left;}
+.items_popup {display: inline-block; width: 100%; margin: 8px 0px; text-align: left; box-sizing: border-box; padding: 0px 0px 5px 10px; border:none; background-color: transparent; border-bottom: 1px solid #cdcdcd !important;}
+#id_popup_invitados {display: none;}
+#cnt_btn_popup_invitados {display: inline-block; width: 100%; box-sizing: border-box; padding: 10px 0px;}
+
+/*popup agrega invitados*/
+#cnt_popup_agrega_invitados 	{position: absolute; top:0; left: 0; width: 100%; height: 100%; display: none; background-color: rgba(0,0,0, .5);}
+#alinea_popup_agrega_invitados 	{display: table; width: 100%; height: 100%;}
+#alinea_popup_vertical_agrega_invitados {display: table-cell; vertical-align: middle; text-align: center;}
+#popup_agrega_invitados {display: inline-block; width: 300px; background-color: #f2f2f2; box-sizing: border-box; padding: 10px 35px; position: relative;}
+#cierra_popup_agrega_invitados {display: inline-block; position: absolute; top: 2px; right: 2px; }
+#cnt_titulo_popup_agrega_invitados {display: inline-block; width: 100%;}
+#titulo_popup_agrega_invitados {display: inline-block; width: 100%; font-size: 18px; color: #e9ad72; margin: 15px 0px 0px 0px; text-align: left;}
+#cnt_btn_popup_agrega_invitados {display: inline-block; width: 100%; box-sizing: border-box; padding: 10px 0px;}
+
+/*popup deshabilita invitados*/
+#cnt_popup_deshabilita_invitados 	{position: absolute; top:0; left: 0; width: 100%; height: 100%; display: none; background-color: rgba(0,0,0, .5);}
+#alinea_popup_deshabilita_invitados 	{display: table; width: 100%; height: 100%;}
+#alinea_popup_vertical_deshabilita_invitados {display: table-cell; vertical-align: middle; text-align: center;}
+#popup_deshabilita_invitados {display: inline-block; width: 320px; background-color: #f2f2f2; box-sizing: border-box; padding: 10px 20px; position: relative;}
+#cnt_titulo_popup_deshabilita_invitados {display: inline-block; width: 100%;}
+#texto_popup_deshabilita_usuario {display: inline-block; width: 100%; margin: 20px 0px; color: #5a5757;}
+#titulo_popup_deshabilita_invitados {display: inline-block; width: 100%; font-size: 18px; color: #d7444e; margin: 15px 0px 0px 0px; text-align: left;}
+#cnt_btn_popup_deshabilita_invitados {display: inline-block; width: 100%; box-sizing: border-box; padding:10px 0px;}
+#cierra_popup_deshabilitar_invitados {width: auto !important; display: inline-block; margin: 0px !important; padding: 8px 25px !important; background-color: #e9ad72; border: solid 2px #e9ad72 !important; color: #ffffff; text-decoration: none; font-family: 'lato-light'; font-size: 14px;  -webkit-transition: .3s; -o-transition: .3s; -ms-transition: .3s; -moz-transition: .3s; transition: .3s;}
+#cierra_popup_deshabilitar_invitados:hover {color: #e9ad72; background-color: #ffffff;}

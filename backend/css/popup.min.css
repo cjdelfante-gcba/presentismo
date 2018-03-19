@@ -1,0 +1,5 @@
+#pop_up{position:absolute;width:100%;top:30px;left:0;z-index:10}#pop_up_registros{display:block;width:100%;text-align:center}#pop_up_registro_seleccionado{display:inline-block;width:100%;background-color:#fff;padding:10px 0;max-width:980px;min-width:600px}
+#pop_up_registro_seleccionado .cont_registro{display:inline-block;width:50%;box-sizing:border-box;text-align:left;padding:0 20px}#pop_up_registro_seleccionado .cont_registro span{font-size:14px;width:90%;display:inline-block;padding:10px 0;border-bottom:1px solid #cdcdcd}
+#header_popup{display:inline-block;width:100%;padding:10px 20px;box-sizing:border-box}#cnt_header_popup{display:inline-block;width:100%}#header_popup_titulo{display:inline-block;width:calc(100% - 300px);text-align:left}
+#header_popup_titulo span{font-size:20px;font-weight:bold}#cerrar_popup span{font-size:10px;font-weight:bold}#cerrar_popup{display:inline-block;width:100%;text-align:right;cursor:pointer}
+.descargar_registro_seleccionado{display:inline-block;width:300px;cursor:pointer}.descargar_registro_seleccionado span{display:inline-block;border-radius:3px;box-sizing:border-box;background-color:#66bb6a;color:#fff;padding:5px 40px}
