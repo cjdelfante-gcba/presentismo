@@ -3,12 +3,28 @@
 
 	class rei
 	{
-	  /*variables de conexion local*/
-	  var $c; 
-	  var $conexion = "";
-	  var $usuario 	= ""; 
-	  var $clave 	= ""; 
-	  var $base 	= "";
+		  /*variables de conexion local*/
+		var $c; 
+		var $conexion = "";
+		var $usuario 	= ""; 
+		var $clave 	= ""; 
+		var $base 	= "";
+
+		var $connstr = getenv("MYSQLCONNSTR_MySqlDB");    
+	    
+	    //Parse the above environment variable to retrieve username, password and hostname.
+	    foreach ($_SERVER as $key => $value) 
+	    {
+	        if (strpos($key, "MYSQLCONNSTR_") !== 0) 
+	        {
+	            continue;
+	        }
+	        $conexion = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
+	        $usuario = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
+	        $clave = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
+	        $base = preg_replace("/^.*Database=(.+?)$/", "\\1", $value);
+	        break;
+	    }
 	  
 	  /*variables de resultado*/
 	  var $total_consultas = 0;
