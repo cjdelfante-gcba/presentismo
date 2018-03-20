@@ -3,15 +3,13 @@
 
 	class rei
 	{
-	var $connstr = getenv("MYSQLCONNSTR_MySqlDB");    
-
-	/*variables de conexion local*/
-	var $c; 
-	var $conexion = "dbpresentismo-ferias.mysql.database.azure.com";
-	var $usuario = "collaborator@dbpresentismo-ferias"; 
-	var $clave = "TheCollaborator.2018"; 
-	var $base = "default";
-	
+	  /*variables de conexion local*/
+	  var $c; 
+	  var $conexion = "dbpresentismo-ferias.mysql.database.azure.com";
+	  var $usuario 	= "collaborator@dbpresentismo-ferias"; 
+	  var $clave 	= "TheCollaborator.2018"; 
+	  var $base 	= "default";
+	  
 	  /*variables de resultado*/
 	  var $total_consultas = 0;
 
