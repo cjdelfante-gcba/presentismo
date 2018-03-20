@@ -27,7 +27,7 @@
 	        break;
 	    }
 
-	    print "Conexion: " . $conexion
+	    print "Conexion: " . $conexion;
    	} 
     //Parse the above environment variable to retrieve username, password and hostname.
     
