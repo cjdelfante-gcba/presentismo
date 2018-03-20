@@ -40,10 +40,14 @@ NodeList.prototype.remove  = HTMLCollection.prototype.remove = function() {for(v
                _esp = datos.split("=")[1];
       a.onreadystatechange = function () {
          if(a.readyState == 4 && a.status != 200)
+         {
+            console.log(_esp);
              _recibe_errores_ajax(_esp);
+         }
          else if(a.readyState == 4 && a.status == 200)
          {
             ((url.indexOf(".html") >-1)) ? j = a.responseText : j = JSON.parse(a.responseText);
+            console.log(j);
             _recibe_ajax(j,_esp);
          }
       };
