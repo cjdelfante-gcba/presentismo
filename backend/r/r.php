@@ -11,20 +11,24 @@
 	var $usuario = ""; 
 	var $clave = ""; 
 	var $base = "";
-	    
+	
+	function __construct()
+	{
+	    foreach ($_SERVER as $key => $value) 
+	    {
+	        if (strpos($key, "MYSQLCONNSTR_") !== 0) 
+	        {
+	            continue;
+	        }
+	        $conexion = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
+	        $usuario = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
+	        $clave = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
+	        $base = preg_replace("/^.*Database=(.+?)$/", "\\1", $value);
+	        break;
+	    }
+   	} 
     //Parse the above environment variable to retrieve username, password and hostname.
-    foreach ($_SERVER as $key => $value) 
-    {
-        if (strpos($key, "MYSQLCONNSTR_") !== 0) 
-        {
-            continue;
-        }
-        $conexion = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
-        $usuario = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
-        $clave = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
-        $base = preg_replace("/^.*Database=(.+?)$/", "\\1", $value);
-        break;
-    }
+    
 
 	  
 	  /*variables de resultado*/
