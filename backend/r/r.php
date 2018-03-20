@@ -5,32 +5,13 @@
 	{
 	  /*variables de conexion local*/
 	  var $c; 
-	  var $conexion = "";
-	  var $usuario 	= ""; 
-	  var $clave 	= ""; 
-	  var $base 	= "";
+	  var $conexion = "dbpresentismo-ferias.mysql.database.azure.com";
+	  var $usuario 	= "collaborator@dbpresentismo-ferias"; 
+	  var $clave 	= "TheCollaborator.2018"; 
+	  var $base 	= "default";
 	  
 	  /*variables de resultado*/
 	  var $total_consultas = 0;
-
-	function __construct()
-	{
-	    $connstr = getenv("MYSQLCONNSTR_MySqlDB");    
-	    
-	    //Parse the above environment variable to retrieve username, password and hostname.
-	    foreach ($_SERVER as $key => $value) 
-	    {
-	        if (strpos($key, "MYSQLCONNSTR_") !== 0) 
-	        {
-	            continue;
-	        }
-	        $conexion = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
-	        $usuario = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
-	        $clave = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
-	        $base = preg_replace("/^.*Database=(.+?)$/", "\\1", $value);
-	        break;
-	    }
-	}
 
 	  public function conectar()
 	  { 
