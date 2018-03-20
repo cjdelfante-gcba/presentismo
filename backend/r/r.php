@@ -26,6 +26,8 @@
 	        $base = preg_replace("/^.*Database=(.+?)$/", "\\1", $value);
 	        break;
 	    }
+
+	    print "Conexion: " . $conexion
    	} 
     //Parse the above environment variable to retrieve username, password and hostname.
     
